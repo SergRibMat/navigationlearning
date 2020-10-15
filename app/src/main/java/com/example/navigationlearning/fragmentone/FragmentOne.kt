@@ -38,7 +38,11 @@ class FragmentOne : Fragment() {
 
     fun goToFragmentTwo(){
         binding.buttonToFragmentTwo.setOnClickListener { view: View ->
-            view.findNavController().navigate(FragmentOneDirections.actionFragmentOneNavigationToFragmentTwoNavigation(5))
+            view.findNavController().navigate(
+                FragmentOneDirections.actionFragmentOneNavigationToFragmentTwoNavigation(
+                    fromStringToIntegerOrNull(getEditTextNumber())?: 0
+                )
+            )
         }
     }
 
@@ -52,4 +56,8 @@ class FragmentOne : Fragment() {
             view!!.findNavController())
                 || super.onOptionsItemSelected(item)
     }
+
+    fun getEditTextNumber(): String = binding.etNumber.text.toString()
+
+    fun fromStringToIntegerOrNull(text: String): Int? = text.toIntOrNull()
 }
