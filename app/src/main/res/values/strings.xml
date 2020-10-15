@@ -2,4 +2,12 @@
     <string name="app_name">NavigationLearning</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="this_is_the_about_fragment">This is the about Fragment</string>
+    <string name="number">Number</string>
+    <string name="fragment_two">Fragment Two</string>
+    <string name="to_fragment_three">To Fragment Three</string>
+    <string name="fragment_three">FRAGMENT THREE</string>
+    <string name="enter_integer">Enter Integer</string>
+    <string name="fragment_one">Fragment One</string>
+    <string name="to_fragment_two">To Fragment Two</string>
 </resources>
